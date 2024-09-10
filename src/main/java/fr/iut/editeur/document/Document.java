@@ -36,6 +36,14 @@ public class Document {
         String partie = texte.substring(debut, fin);
         partie =partie.toUpperCase();
         remplacer(debut, fin-1, partie);
-
     }
+
+    public void effacer(int debut, int fin) {
+        remplacer(debut, fin-1, "");
+    }
+
+    public void clear(){
+        texte=".";
+    }
+
 }
